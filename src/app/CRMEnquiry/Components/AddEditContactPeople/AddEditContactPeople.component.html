@@ -1,0 +1,98 @@
+<div class="page-container">
+    <div class="page-content backwallpaper">
+        <div class="note-orange ">
+            <label class="control-label fontcolor1" id="lblAddContactPeople" style="font-weight: 700; font-size: 20px;">Add Contact People</label>
+            <hr>
+
+            <div class="row page-body">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Title:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtTitle" [(ngModel)]="objContactPeople.Title" class="form-control" />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Forename:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtForename" [(ngModel)]="objContactPeople.Forename" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Surname:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtSurname" [(ngModel)]="objContactPeople.Surname" class="form-control" />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Formal Salutation:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtFormalSalutation" [(ngModel)]="objContactPeople.FormalSalutation" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Informal Salutation:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtInformalSalutation" [(ngModel)]="objContactPeople.InformalSalutation" class="form-control" />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Position:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtPosition" [(ngModel)]="objContactPeople.Position" class=" form-control" />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Telephone:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtTel" [(ngModel)]="objContactPeople.Tel" class=" form-control" />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Mobile:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtMobile" [(ngModel)]="objContactPeople.Mobile" class=" form-control" />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Email:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtEmail" [(ngModel)]="objContactPeople.Email" class=" form-control" />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Primary Contact:
+                        </div>
+                        <div class="col-md-1 col-sm-12 col-xs-12">
+                            <input type="checkbox" id="chbPrimaryContact" [checked]="isPrimaryContact" (change)="isPrimaryContact = !isPrimaryContact"
+                            />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Don't Email:
+                        </div>
+                        <div class="col-md-1 col-sm-12 col-xs-12">
+                            <input type="checkbox" id="chbDontEmail" [checked]="isDontEmail" (change)="isDontEmail = !isDontEmail" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
+                    <div class="col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
+                        <div class="pull-right" style="float:right">
+                            <button type="button" class="btn btn-success" id="btnSave" (click)="onSaveClick()">Save</button>
+                            <button type="button" class="btn btn-inverse" id="btnCancel" (click)="onCancelClick()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,195 @@
+<style>
+    @media (min-width: 300px) and (max-width: 750px) {
+        .textAlign {
+            text-align: left;
+        }
+    }
+</style>
+
+<div class="row col-md-12 col-container" style="padding: 20px">
+    <div class="col-md-4">
+
+        <div class="portletHeaderTitle backcolor1" style="margin-bottom: -1px;">
+            <div class="Title">
+                <span aria-hidden="true" class="fa fa-map-marker"></span> Address
+            </div>
+            <div class="tools">
+                <a (click)="onEditAddressClick()">
+                    <i aria-hidden="true" class="fa fa-edit"></i> Edit</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+        
+        <!-- Customer Information -->
+        <div class="portletHeaderTitle-body bordercolor1">
+            <form class="form-horizontal form-row-sepe ng-untouched ng-pristine ng-valid" id="" novalidate="">
+              
+              <div id="Changes" style="float: right; display: none;">
+                <button type="button" class="btn btn-success" id="btnSave" (click)="onSaveClick()">Save</button>
+                <button type="button" class="btn btn-danger" id="btnCancel" (click)="onCancelClick()">Cancel</button>
+              </div>
+                <table style="width: 75%;">
+                    <tr>
+                      <td><span class="dictCompany">Company</span> Name:</td>
+                      <td><input type="text" id="TxtCompany" value="{{objContact.Company}}" readonly="true" style="border: 0; font-weight: bold;"/></td>
+                    </tr>
+                    <tr>
+                      <td>Account Ref:</td>
+                      <td><input type="text" value="{{objContact.ContactRef}}" readonly="true" style="border: 0; font-weight: bold;"/></td>
+                    </tr>
+                    <br/>
+                    <tr>
+                        <td>Address:</td>
+                        <td><input type="text" id="TxtAddress" value="{{objContact.Address1}} {{objContact.Address2}} {{objContact.Address3}}" readonly="true" style="border: 0; font-weight: bold; width: 100%;"/></td>
+                   </tr>
+                   <tr>
+                        <td>Town:</td>
+                        <td><input type="text" id="TxtTown" value="{{objContact.Town}}" readonly="true" style="border: 0; font-weight: bold;"/></td>
+                   </tr >
+                   <tr>
+                        <td>County:</td>
+                        <td><input type="text" id="TxtCounty" value="{{objContact.County}}" readonly="true" style="border: 0; font-weight: bold;"/></td>
+                   </tr>
+                   <tr>
+                        <td>PostCode:</td>
+                        <td><input type="text" id="TxtPostCode" value="{{objContact.PostCode}}" readonly="true" style="border: 0; font-weight: bold;"/></td>
+                   </tr>
+                   <br/>
+                   <tr>
+                        <td>Telephone:</td>
+                        <td><input type="text" id="TxtTel" value="{{objContact.Tel}}" readonly="true" style="border: 0; font-weight: bold;"/></td>
+                   </tr>
+                 </table>
+            </form>
+        </div>
+         <!-- Customer Information -->
+    </div>
+
+    <!-- Dates Overview -->
+  <div class="col-md-4">
+    <div class="portletHeaderTitle backcolor1" style="margin-bottom: -1px;">
+      <div class="Title">
+        <span aria-hidden="true" class="fa fa-map-marker"></span> Dates Overview
+      </div>
+      <div class="tools">      
+        <a (click)="open(content)">
+          <i aria-hidden="true" class="fa fa-edit"></i> Edit</a>
+      </div>
+      
+      <div class="clearfix"></div>
+      
+    </div>
+    
+    <div class="portletHeaderTitle-body bordercolor1" style="min-height: 200px;">
+      <form class="form-horizontal form-row-sepe ng-untouched ng-pristine ng-valid" id="" novalidate="">
+
+        <div style="float: right; display: none;">
+          <button type="button" class="btn btn-success" id="btnSave" (click)="onSaveClick()">Save</button>
+          <button type="button" class="btn btn-inverse" id="btnCancel" (click)="onCancelClick()">Cancel</button>
+        </div>
+
+        <table style="width: 75%;">
+            <tr>
+              <td>Last Contacted:</td>
+              <td style="font-weight: bold;">10/08/2018</td>
+            </tr>
+            <tr>
+              <td>Next Contact Date:</td>
+              <td style="font-weight: bold;">11/08/2018</td>
+            </tr>
+            <br/>
+            <tr>
+              <td>Controller:</td>
+              <td style="font-weight: bold;">AO</td>
+            </tr >
+            <tr>
+              <td>Sales Rep::</td>
+              <td style="font-weight: bold;">SR</td>
+            </tr>
+            <br/>
+            <tr>
+              <td>Last Review Date:</td>
+              <td style="font-weight: bold;">10/08/2018</td>
+            </tr>
+            <tr>
+              <td>Next Review Date:</td>
+              <td style="font-weight: bold;">11/08/2018</td>
+            </tr>
+        </table>
+
+      </form>
+    </div>
+  </div>
+   <!-- Dates Overview -->
+
+  <!-- Analysis and Flags -->
+  <div class="col-md-4">
+    <div class="portletHeaderTitle backcolor1" style="margin-bottom: -1px;">
+      <div class="Title">
+        <span aria-hidden="true" class="fa fa-map-marker"></span> Analysis & Flags
+      </div>
+      <div class="tools">      
+        <a (click)="open(content)">
+        <i aria-hidden="true" class="fa fa-edit"></i> Edit</a>
+      </div>
+        
+      <div class="clearfix"></div>
+        
+    </div>
+      
+    <div class="portletHeaderTitle-body bordercolor1" style="min-height: 200px;">
+      <form class="form-horizontal form-row-sepe ng-untouched ng-pristine ng-valid" id="" novalidate="">
+
+        <div style="float: right; display: none;">
+          <button type="button" class="btn btn-success" id="btnSave" (click)="onSaveClick()">Save</button>
+          <button type="button" class="btn btn-inverse" id="btnCancel" (click)="onCancelClick()">Cancel</button>
+        </div>
+
+            <table style="width: 75%;">
+                    <tr>
+                      <td>1:</td>
+                      <td style="font-weight: bold;">Networking</td>
+                    </tr>
+                    <tr>
+                      <td>2:</td>
+                      <td style="font-weight: bold;"></td>
+                    </tr>
+                    <br/>
+                    <tr>
+                      <td>Area:</td>
+                      <td style="font-weight: bold;"></td>
+                    </tr >
+                    <tr>
+                      <td>2:</td>
+                      <td style="font-weight: bold;"></td>
+                    </tr>
+                    <br/>
+                    <tr>
+                      <td>Primary Sector:</td>
+                      <td style="font-weight: bold;">Manufacturing</td>
+                    </tr>
+                    <tr>
+                      <td>Secoundry Sector:</td>
+                      <td style="font-weight: bold;">Wholesale</td>
+                    </tr>
+                </table>
+  
+      </form>
+    </div>
+  </div>
+ <!-- Analysis and Flags -->
+
+</div>
+
+
+    <!--People-->
+    <div class="row col-md-12 col-container" style="padding-right: 0px; align-content: left; width: 1200px;">
+        <crm-enquiry-people [IsDisplay]="true" [ContactId]="selectedContact" (notifyToDetails)="onPeopleNotify($event)" style="width: 150%;"></crm-enquiry-people>
+    </div>
+
+    <ng-template #content let-c="close" let-d="dismiss" id="popEditContact">
+        <div class="modal-body">
+            <crm-enquiry-add-edit-contact [ContactId]="selectedContact" (notifyAboutEditContact)="onEditContactNotify($event)"></crm-enquiry-add-edit-contact>
+        </div>
+    </ng-template>

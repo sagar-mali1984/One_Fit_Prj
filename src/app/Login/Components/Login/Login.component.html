@@ -1,0 +1,111 @@
+<div class="col-md-5 col-sm-6 col-sm-12 login-div">
+    <form>
+        <div class="form-group col-md-12 col-sm-12 col-xs-12">
+            <span class="label-font whiteLabel">OneFit Application Name</span>
+        </div>
+        <div class="login-content">
+            <img src="./assets/Images/OneFitDevelopmentLogo.png" style="margin-bottom: 4%;" />
+            <div class="form-group col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 0px;">
+                <label class="control-label validation-message">{{errorMessage}}</label>
+            </div>
+            <div class="form-group col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 0px;">
+                <span class="label-font">User name</span>
+            </div>
+            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                <input class="form-control controlStyle" name="UserName" type="text" id="txtUserName" [(ngModel)]="objUser.UserName" placeholder="UserName"
+                    />
+            </div>
+            <div class="form-group col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 0px;">
+                <span class="label-font">Password</span>
+            </div>
+            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                <input class="form-control controlStyle" name="Password" type="password" id="txtPassword" [(ngModel)]="objUser.Password"
+                    placeholder="Password" />
+            </div>
+            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                <button name="btnLogin" id="btnLogin" class="btn btn-success buttonStyle" (click)="Login()">Log In</button>
+            </div>
+            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                <a class="label-font whiteLabel" style="cursor:pointer" (click)="open('ForgotPwd')" >Forgotten Password?</a>
+            </div>
+            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                <label class="control-label validation-message">{{ForgotPassword}}</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- <div id="modalDisplayError" tabindex="-1" role="dialog" class="modal fade col-sm-12 col-xs-12" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+          <h4 class="modal-title">Attorney Referrals</h4>
+        </div>
+        <div class="modal-body" style="height: auto;">
+          content
+        </div>
+        <div class="modal-footer" style="margin:0px;padding:0px;">
+          <button type="button" data-dismiss="modal" id="btnEditProjectSave" class="btn-submit btn btn-success btn-outline-rounded green"
+            style="float:right;width:70px" (click)="modalClose()">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalNotTexas" tabindex="-1" role="dialog" class="modal fade col-sm-12 col-xs-12" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Notice:</h4>
+        </div>
+        <div class="modal-body" style="height: auto;">
+          <p>
+            
+          LienStar is intended for use on construction projects located within the State of Texas only.  You have indicated that your project is located in a State other than Texas.  Please contact an experienced construction law attorney in the State in which your project is located for advice on how to perfect a claim in that particular State.  
+          </p>
+          <p>
+          For assistance in contacting a construction attorney who is licensed in a State other than Texas, you may call the American Bar Association’s (the “ABA”) Construction Law Section at (800) 285-2221.  The ABA is available to assist you from 7:30 am to 5:30 p.m. (Central Time), Monday through Friday.
+          </p>
+        </div>
+        <div class="modal-footer" style="margin:0px;padding:0px;">
+          <button type="button" data-dismiss="modal" id="btnEditProjectSave" class="btn-submit btn btn-success btn-outline-rounded green"
+            style="float:right;width:70px" (click)="modalClose()">OK</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">Message</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <label  class="control-label validation-message">{{errorMessage}}</label>
+      <!-- <form>
+        <div class="form-group">
+          <label for="dateOfBirth">Date of birth</label>
+          <div class="input-group">
+            <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" type="text">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" (click)="dp.toggle()" type="button">
+                <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form> 
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Ok</button>
+    </div>
+  </ng-template>
+  
+  <!-- <button  (click)="open(content)">Launch demo modal</button> 
+  
+  <hr>
+  
+  <!-- <pre>{{closeResult}}</pre> -->

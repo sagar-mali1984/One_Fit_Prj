@@ -1,0 +1,27 @@
+.mat-panel-bg{
+    background-color:rgb(209, 208, 208);
+    padding-top: 10px;
+}
+.mat-card-place{
+    padding:0;
+    margin:0;
+}
+.btn-css{
+    line-height: 20px;
+    background-color: #4472c4;
+    color: white;
+    border-radius: 2px !important;
+}
+.btn-saveCancel{
+    line-height: 20px;
+    border-radius: 2px !important;
+}
+.mat-tab-label.mat-tab-label-active {
+    background-color: #673ab726;
+    color: #2b328e !important;
+    font-weight: 700;
+    opacity: unset;
+    border-left: 1px solid #673ab7;
+    border-top: 1px solid #673ab7;
+    border-right: 1px solid #673ab7;
+}

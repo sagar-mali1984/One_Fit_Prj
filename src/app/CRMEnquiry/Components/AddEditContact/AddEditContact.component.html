@@ -1,0 +1,94 @@
+<div class="page-container">
+    <div class="page-content backwallpaper">
+        <div class="note-orange ">
+            <label class="control-label fontcolor1" id="lblAddContact" style="font-weight: 700; font-size: 20px;"> Add New Contact</label>
+            <hr>
+
+            <div class="row page-body">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Contact Ref:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtContactRef" class="form-control" [(ngModel)]="objContact.ContactRef" />
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Company Name:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtCompanyName" class="form-control" [(ngModel)]="objContact.Company" />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Address1:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtAddress1" class="form-control" [(ngModel)]="objContact.Address1" />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Address2:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtAddress2" class="form-control" [(ngModel)]="objContact.Address2" />
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Address3:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtAddress3" class="form-control" [(ngModel)]="objContact.Address3" />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Town:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtTown" class="form-control" [(ngModel)]="objContact.Town" />
+                        </div>
+
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            County:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtCounty" class="form-control" [(ngModel)]="objContact.County" />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            PostCode:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtPostCode" class="form-control" [(ngModel)]="objContact.PostCode" />
+                        </div>
+
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Telephone:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtTel" class="form-control" [(ngModel)]="objContact.Tel" />
+                        </div>
+                        <div class="col-md-2 col-sm-12 col-xs-12">
+                            Website:
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <input type="text" id="txtWWW" class="form-control" [(ngModel)]="objContact.WWW" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
+                    <div class="col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px;">
+                        <div class="pull-right" style="float:right">
+                            <button type="button" class="btn btn-success" id="btnSave" (click)="onSaveClick()">Save</button>
+                            <button type="button" class="btn btn-inverse" id="btnCancel" (click)="onCancelClick()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
